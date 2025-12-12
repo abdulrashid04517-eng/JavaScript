@@ -51,3 +51,34 @@ const myFunction = function(){
 }
 
 console.log(typeof anotherId);
+
+
+//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ Memory $$$$$$$$$$$$$$$$$$$$$$$$$
+
+
+// there are two types of memory. 1.Stack(Primitive) 2.Heap(Non-Primitivess)
+// 1.Stack
+
+let myYoutubename = "albhabet"
+
+let anothername = myYoutubename
+anothername = "asphalt"
+
+console.log(myYoutubename);
+console.log(anothername);
+
+// 2.Heap
+
+let userOne = {
+	email : "user@google.com",
+	upi : "user@ybl"  
+}
+
+let userTwo = userOne
+
+userTwo.email = "rashid@google.com"
+
+console.log(userTwo.email);
+console.log(userOne.email);
+
+
